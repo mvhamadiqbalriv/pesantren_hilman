@@ -55,10 +55,12 @@
                 <h3>PONDOK KALIGRAFI HANJUNGHEJO</h3>
                 <h2 class="section-title">GALERI PONDOK</h2>
 @foreach($gallerys as $gallery)
-<a href="{{ Storage::url($gallery->image) }}" data-featherlight="image" class="col-3 mb-3 wow fadeIn"
-               data-wow-delay="0.1s"><img src="{{ Storage::url($gallery->image) }}" alt="Landing Page" 
-               style="object-fit: cover;width:300px;height:300px;"
-               /></a>
+<div class="col-3">
+    <a href="{{ Storage::url($gallery->image) }}" data-featherlight="image" class="wow fadeIn"
+                   data-wow-delay="0.1s"><img src="{{ Storage::url($gallery->image) }}" alt="Landing Page" 
+                   style="object-fit: cover;width:300px;height:300px;"
+                   /></a>
+</div>
 @endforeach
     </aside>
     <!--End of Gallery-->
