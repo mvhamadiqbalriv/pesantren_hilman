@@ -14,7 +14,7 @@
                 </div>
 
                 <!--Call to Action-->
-                <a href="#" class="button">INFO LEBIH LANJUT</a>
+                <a href="https://goo.gl/maps/opKPyu46nUK5Nkes8" class="button">INFO LEBIH LANJUT</a>
                 <!--End Call to Action-->
 
             </div>
