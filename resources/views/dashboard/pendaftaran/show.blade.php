@@ -132,8 +132,8 @@
                       <div class="card-body">
                         <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Sertifikat Prestasi</i></h6>
                         <div class="d-flex flex-column align-items-center text-center">
-                          <a href="{{ Storage::url($pendaftar->sertifikat_pres)) }}" data-featherlight="image"
-                          data-wow-delay="0.1s"><img src="{{ Storage::url($pendaftar->sertifikat_pres)) }}" alt="" class="rounded" width="200" height="200" style="object-fit: cover"></a>
+                          <a href="{{ Storage::url($pendaftar->sertifikat_pres) }}" data-featherlight="image"
+                          data-wow-delay="0.1s"><img src="{{ Storage::url($pendaftar->sertifikat_pres) }}" alt="" class="rounded" width="200" height="200" style="object-fit: cover"></a>
                           <div class="mt-3">
                           </div>
                         </div>
