@@ -25,7 +25,7 @@
                         <tr>
                             <td>{{ $gallery->id }}</td>
                             <td><strong>{{ $gallery->name }}</strong></td>
-                            <td><img style="max-height: 250px; width:200px" src="{{ asset('storage/'. $gallery->image) }}" class="img-fluid"></td>
+                            <td><img style="max-height: 250px; width:200px" src="{{ Storage::url($gallery->image) }}" class="img-fluid"></td>
                             <td>
                                 <form action="/dashboard/gallery/{{ $gallery->id }}" method="post" class="d-inline">
                                     @method('DELETE')
