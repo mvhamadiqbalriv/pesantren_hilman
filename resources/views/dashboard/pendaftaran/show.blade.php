@@ -25,7 +25,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex flex-column align-items-center text-center">
-                      <img src="{{ asset('storage/'. $pendaftar->foto_diri) }}" alt="FOTO_PENDAFTAR" class="rounded-circle" width="200" height="150">
+                      <img src="{{ Storage::url($pendaftar->foto_diri) }}" alt="FOTO_PENDAFTAR" class="rounded-circle" width="200" height="150">
                       <div class="mt-3">
                       </div>
                     </div>
@@ -146,8 +146,8 @@
                         <div class="card-body">
                           <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Ijazah Terakhir</i></h6>
                           <div class="d-flex flex-column align-items-center text-center">
-                              <a href="{{ asset('storage/'. $pendaftar->ijazah) }}" data-featherlight="image"
-                              data-wow-delay="0.1s"><img src="{{ asset('storage/'. $pendaftar->ijazah) }}" alt="" class="rounded" width="200" height="250"></a>
+                              <a href="{{ Storage::url($pendaftar->ijazah) }}" data-featherlight="image"
+                              data-wow-delay="0.1s"><img src="{{ Storage::url($pendaftar->ijazah) }}" alt="" class="rounded" width="200" height="250"></a>
                             <div class="mt-3">
                             </div>
                           </div>
@@ -160,8 +160,8 @@
                         <div class="card-body">
                           <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">KK</i></h6>
                           <div class="d-flex flex-column align-items-center text-center">
-                              <a href="{{ asset('storage/'. $pendaftar->kartu_kk) }}" data-featherlight="image"
-                              data-wow-delay="0.1s"><img src="{{ asset('storage/'. $pendaftar->kartu_kk) }}" alt="" class="rounded" width="200" height="250"></a>
+                              <a href="{{ Storage::url($pendaftar->kartu_kk) }}" data-featherlight="image"
+                              data-wow-delay="0.1s"><img src="{{ Storage::url($pendaftar->kartu_kk) }}" alt="" class="rounded" width="200" height="250"></a>
                             <div class="mt-3">
                             </div>
                           </div>
@@ -174,8 +174,8 @@
                         <div class="card-body">
                           <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Akte lahir</i></h6>
                           <div class="d-flex flex-column align-items-center text-center">
-                              <a href="{{ asset('storage/'. $pendaftar->akta) }}" data-featherlight="image"
-                              data-wow-delay="0.1s"><img src="{{ asset('storage/'. $pendaftar->akta) }}" alt="" class="rounded" width="200" height="250"></a>
+                              <a href="{{ Storage::url($pendaftar->akta) }}" data-featherlight="image"
+                              data-wow-delay="0.1s"><img src="{{ Storage::url($pendaftar->akta) }}" alt="" class="rounded" width="200" height="250"></a>
                             <div class="mt-3">
                             </div>
                           </div>

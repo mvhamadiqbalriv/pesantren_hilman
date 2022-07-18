@@ -18,7 +18,7 @@
           <label for="formFile" class="form-label">Ganti Foto gallery</label>
           <input type="hidden" name="oldImage" value="{{ $gallery->image }}">
           @if ($gallery->image) 
-                          <img src="{{ asset('storage/' . $gallery->image) }}"
+                          <img src="{{ Storage::url($gallery->image) }}"
                               class="img-preview img-fluid mb-3 mt-3 col-sm-5 d-block">
                       @else
                           <img class="img-preview img-fluid mb-3 mt-3 col-sm-5">
