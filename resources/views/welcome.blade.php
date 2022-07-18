@@ -29,7 +29,7 @@
 <div class="col-lg-3 col-md-2 mt-2 p-2">
         <div class="card d-flex text-center mx-2" style="height:400px; width:300px">
           <div class="d-flex justify-content-center">
-          <img src="{{ asset('storage/'. $pengajar->image) }}" class="card-img-top" alt="foto {{ $pengajar->nama }}" style="height:250px; width:190px">
+          <img src="{{ Storage::url($pengajar->image) }}" class="card-img-top" alt="foto {{ $pengajar->nama }}" style="height:250px; width:190px">
         </div>
           <div class="card-body">
             <h5 class="card-title m-1">{{ $pengajar->nama }}</h5>
