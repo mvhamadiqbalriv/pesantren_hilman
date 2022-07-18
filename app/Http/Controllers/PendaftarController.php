@@ -55,19 +55,19 @@ class PendaftarController extends Controller
             'kartu_kk' => 'image'
         ]);
         if($request->file('foto_diri')){
-            $validatedData['foto_diri']=$request->file('foto_diri')->store('foto-pendaftar');
+            $validatedData['foto_diri']=$request->file('foto_diri')->store('public/foto-pendaftar');
         }
         if($request->file('ijazah')){
-            $validatedData['ijazah']=$request->file('ijazah')->store('foto-ijazah');
+            $validatedData['ijazah']=$request->file('ijazah')->store('public/foto-ijazah');
         }
         if($request->file('akta')){
-            $validatedData['akta']=$request->file('akta')->store('foto-akta');
+            $validatedData['akta']=$request->file('akta')->store('public/foto-akta');
         }
         if($request->file('kartu_kk')){
-            $validatedData['kartu_kk']=$request->file('kartu_kk')->store('foto-kartu_kk');
+            $validatedData['kartu_kk']=$request->file('kartu_kk')->store('public/foto-kartu_kk');
         }
         if($request->file('sertifikat_pres')){
-            $validatedData['sertifikat_pres']=$request->file('sertifikat_pres')->store('foto-sertifikat_pres');
+            $validatedData['sertifikat_pres']=$request->file('sertifikat_pres')->store('public/foto-sertifikat_pres');
         }
 
         Pendaftar::create($validatedData);

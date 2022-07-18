@@ -52,7 +52,7 @@ class PengajarController extends Controller
             'image' => 'image'
         ]);
         if($request->file('image')){
-            $validatedData['image']=$request->file('image')->store('foto-pengajar');
+            $validatedData['image']=$request->file('image')->store('public/foto-pengajar');
         }
         Pengajar::create($validatedData);
         return redirect('/dashboard/pengajar');
@@ -103,7 +103,7 @@ class PengajarController extends Controller
         if($request->oldImage){
             Storage::delete($request->oldImage);
             }
-            $validatedData['image']=$request->file('image')->store('foto-pengajar');
+            $validatedData['image']=$request->file('image')->store('public/foto-pengajar');
         }
             
         

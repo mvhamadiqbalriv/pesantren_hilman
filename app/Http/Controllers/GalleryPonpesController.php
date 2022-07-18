@@ -44,7 +44,7 @@ class GalleryPonpesController extends Controller
             'image' => 'image'
         ]);
         if($request->file('image')){
-            $validatedData['image']=$request->file('image')->store('foto-gallery');
+            $validatedData['image']=$request->file('image')->store('public/foto-gallery');
         }
         GalleryPonpes::create($validatedData);
         return redirect('/dashboard/gallery');
