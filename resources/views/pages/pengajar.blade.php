@@ -63,7 +63,7 @@
             @foreach($pengajars as $pengajar)
             <!--User Testimonial-->
             <blockquote class="col-3 testimonial classic">
-                <img src="{{ asset('storage/'. $pengajar->image) }}" style="width:100px; height:100px" alt="User"/>
+                <img src="{{ Storage::url($pengajar->image) }}" style="width:100px; height:100px" alt="User"/>
                 <q><Strong>{{ $pengajar->nama }}</Strong></q>
                 <footer>{{ $pengajar->mapel->name }} <BR></BR>{{ $pengajar->NIP }}</footer>
             </blockquote>
